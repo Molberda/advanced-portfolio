@@ -31,7 +31,7 @@ LANDING
 nav{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 24px 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
