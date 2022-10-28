@@ -98,12 +98,12 @@ nav {
 }
 
 .contrast__button:hover .fa-circle-half-stroke {
-  font-size: 22px;
+  scale: 1.2;
 }
 
 .fa-circle-half-stroke {
   font-size: 20px;
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease;
 }
 
 /* 
@@ -125,6 +125,23 @@ LANDING green = #1bb71bbb
 .landing__title {
   font-size: 120px;
 }
+
+.wave{
+    display: inline-block;
+    animation: animate-wave 3000ms infinite alternate-reverse ease-in-out;
+}
+
+@keyframes animate-wave{
+    0%{
+     transform: rotate(0);
+    }
+    50%{
+      transform: rotate(20deg);
+    }
+    100%{
+      transform: rotate(0);
+    }
+  }
 
 .landing__intro {
   font-size: 24px;
@@ -163,6 +180,7 @@ LANDING green = #1bb71bbb
   border-radius: 10px;
   height: 28px;
   width: 16px;
+  opacity: .7;
 }
 
 .scroll__dot {
@@ -170,4 +188,16 @@ LANDING green = #1bb71bbb
   width: 4px;
   border-radius: 6px;
   background-color: black;
+  animation: scroll 1500ms infinite alternate ease-in-out;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+    
 }
