@@ -40,6 +40,7 @@ NAV
 
 #landing__page {
   height: 100vh;
+  position: relative;
 }
 
 nav {
@@ -113,13 +114,12 @@ LANDING green = #1bb71bbb
 
 .landing__row {
   max-width: 1000px;
-  height: 100%;
   padding-top: 80px;
 }
 
-.landing__container{
-    margin: 0 12px;
-    flex-direction: column;
+.landing__container {
+  margin: 0 12px;
+  flex-direction: column;
 }
 
 .landing__title {
@@ -149,4 +149,25 @@ LANDING green = #1bb71bbb
   width: 32px;
   color: white;
   background-color: #1bb71bbb;
+}
+
+.scroll__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 28px;
+  width: 16px;
+}
+
+.scroll__dot {
+  height: 6px;
+  width: 4px;
+  border-radius: 6px;
+  background-color: black;
 }
