@@ -1,5 +1,3 @@
-/* background color = #3ed33e33 */
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -15,7 +13,7 @@ a{
 }
 
 body{
-    background-color: #3ed33e33;
+    background-color: rgb(245, 245, 245);
 }
 
 /*
