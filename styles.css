@@ -1,0 +1,92 @@
+/* background color = #3ed33e33 */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+}
+
+body{
+    background-color: #3ed33e33;
+}
+
+/*
+
+LANDING 
+
+*/
+
+#landing__page{
+    height: 100vh;
+}
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo--wrapper{
+    width: 70px;
+    display: flex;
+}
+
+.nav__logo{
+    width: 100%;
+}
+
+.nav__link--list{
+    display: flex;
+}
+
+.nav__link--item{
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__link{
+position: relative;
+}
+.nav__link:hover .nav__link-hover-effect{
+width: 100%;
+left: 0;
+}
+
+.nav__link-hover-effect{
+    height: 3px;
+    border-radius: 3px;
+    width: 0%;
+    right: 0;
+    background-color: black;
+    position: absolute;
+    transition: all 500ms ease;
+}
+
+.contrast__button{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.contrast__button:hover .fa-circle-half-stroke{
+    font-size: 22px
+}
+
+.fa-circle-half-stroke{
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
