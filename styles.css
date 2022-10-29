@@ -315,6 +315,7 @@ PROJECTS #1bb71b
     border-radius: 32px;
     overflow: hidden;
     box-shadow: 0 0px 60px 0px #055e05a3;
+    margin-bottom: 160px;
 }
 
 .projects__img{
@@ -330,6 +331,7 @@ PROJECTS #1bb71b
 .projects__wrapper:hover .projects__hover--background{
     opacity: 1;
 }
+
 .projects__wrapper:hover .projects__description--container{
     opacity: 1;
     transform: translateY(-50%);
@@ -344,7 +346,7 @@ PROJECTS #1bb71b
     background-color: #242424b5;
     z-index: 2;
     opacity: 0;
-    transition: all 300ms ease;
+    transition: all 600ms ease;
 }
 
 .projects__description--container{
@@ -355,9 +357,28 @@ PROJECTS #1bb71b
     left: 60px;
     color: white;
     z-index: 3;
-    transition: all 300ms ease;
+    transition: all 1000ms ease;
+}
+
+.project__title{
+    font-size: 32px;
+}
+
+.project__subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin:0 0 16px;
 }
 
 .project__description{
+    font-size: 16px;
+    margin: 8px 0;
     max-width: 60%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.project__link{
+    color: white;
+    font-size: 20px;
 }
