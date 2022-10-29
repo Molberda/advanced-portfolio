@@ -7,6 +7,14 @@
   text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
+}
+
 a {
   color: black;
   font-weight: bold;
@@ -32,42 +40,42 @@ body {
   width: 100%;
 }
 
-.click{
-    transition: all 300ms ease;
+.click {
+  transition: all 300ms ease;
 }
 
-.click:hover{
-    scale: 1.2;
+.click:hover {
+  scale: 1.2;
 }
 
-.click:active{
-    scale: 0.8;
+.click:active {
+  scale: 0.8;
 }
 
-.contact__button{
-    position: fixed;
-    bottom: 60px;
-    right: 80px;
-    border: none;
-    border-radius: 50%;
-    background-color: #242424;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 80px;
-    z-index: 5;
+.contact__button {
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  border: none;
+  border-radius: 50%;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  z-index: 5;
 }
 
-.contact__link{
-    color: white;
-    font-size: 32px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.contact__link {
+  color: white;
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 /*
@@ -131,7 +139,6 @@ nav {
   display: flex;
   background-color: transparent;
   border: none;
-  cursor: pointer;
   position: relative;
 }
 
@@ -161,22 +168,22 @@ LANDING green = #1bb71bbb
   font-size: 120px;
 }
 
-.wave{
-    display: inline-block;
-    animation: animate-wave 3000ms infinite alternate-reverse ease-in-out;
+.wave {
+  display: inline-block;
+  animation: animate-wave 3000ms infinite alternate-reverse ease-in-out;
 }
 
-@keyframes animate-wave{
-    0%{
-     transform: rotate(0);
-    }
-    50%{
-      transform: rotate(20deg);
-    }
-    100%{
-      transform: rotate(0);
-    }
+@keyframes animate-wave {
+  0% {
+    transform: rotate(0);
   }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 
 .landing__intro {
   font-size: 24px;
@@ -186,12 +193,12 @@ LANDING green = #1bb71bbb
   margin: 24px 0;
 }
 
-.about__text{
-    transition: all 300ms ease;
+.about__text {
+  transition: all 300ms ease;
 }
 
-.about__text:hover{
-   color:  #1bb71b;
+.about__text:hover {
+  color: #1bb71b;
 }
 
 .landing__links {
@@ -212,32 +219,32 @@ LANDING green = #1bb71bbb
   transition: all 300ms ease;
 }
 
-.landing__link:hover{
-    background-color:#1bb71be8;
+.landing__link:hover {
+  background-color: #1bb71be8;
 }
 
-.landing__img--wrapper{
-    display: flex;
-    border-radius: 50%;
-    box-shadow: 20px 20px 100px;
-    overflow: hidden;
-    width: 400px;
-    height: 400px;
-    animation: float 1500ms ease infinite alternate-reverse;
+.landing__img--wrapper {
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 20px 20px 100px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  animation: float 1500ms ease infinite alternate-reverse;
 }
 
-@keyframes float{
-    0%{
-        transform: translateY(0);
-    }
-    
-    100%{
-        transform: translateY(12px);
-    }
+@keyframes float {
+  0% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(12px);
+  }
 }
 
-.landing__img{
-    width: 100%;
+.landing__img {
+  width: 100%;
 }
 
 .scroll__wrapper {
@@ -252,7 +259,7 @@ LANDING green = #1bb71bbb
   border-radius: 10px;
   height: 32px;
   width: 16px;
-  opacity: .7;
+  opacity: 0.7;
   transition: all 300ms ease;
 }
 
@@ -264,17 +271,26 @@ LANDING green = #1bb71bbb
   animation: scroll 1500ms infinite alternate ease-in-out;
 }
 
-.scroll__wrapper:hover{
-    opacity: 1;
+.scroll__wrapper:hover {
+  opacity: 1;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateY(-6px);
-    }
+  0% {
+    transform: translateY(-6px);
+  }
 
-    100% {
-        transform: translateY(6px);
-    }
-    
+  100% {
+    transform: translateY(6px);
+  }
+}
+
+/* 
+
+PROJECTS
+
+*/
+
+#projects{
+    height: 100vh;
 }
