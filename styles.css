@@ -238,11 +238,11 @@ LANDING green = #1bb71bbb
 
 @keyframes float {
   0% {
-    transform: translateY(-12px);
+    transform: translateY(-6px);
   }
 
   100% {
-    transform: translateY(12px);
+    transform: translateY(6px);
   }
 }
 
