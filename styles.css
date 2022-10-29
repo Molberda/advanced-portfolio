@@ -288,6 +288,30 @@ LANDING green = #1bb71bbb
 
 /* 
 
+MODAL
+
+*/
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1100px;
+  height: 700px;
+  box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+.modal__half{
+  width: 50%;
+}
+
+/* 
+
 PROJECTS #1bb71b
 
 */
