@@ -37,6 +37,7 @@ body {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .conatiner {
@@ -69,6 +70,7 @@ body {
   height: 80px;
   width: 80px;
   z-index: 5;
+  box-shadow: 0 0 10px white;
 }
 
 .contact__link {
@@ -125,7 +127,7 @@ nav {
   left: 0;
 }
 
-.nav__link-hover-effect {
+.nav__link-hover-effect, .footer__link-hover-effect {
   height: 3px;
   border-radius: 3px;
   width: 0%;
@@ -156,6 +158,7 @@ LANDING green = #1bb71bbb
 .landing__row {
   max-width: 1000px;
   padding-top: 80px;
+  height: auto;
 }
 
 .landing__container {
@@ -249,7 +252,8 @@ LANDING green = #1bb71bbb
   align-items: center;
   margin-bottom: 8px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
+  transform: translateY(-10px);
   right: 50%;
   transform: translateX(-50%);
   border: 2px solid black;
@@ -290,7 +294,6 @@ PROJECTS #1bb71b
 
 #projects{
     margin-top: 40px;
-    height: 100vh;
 }
 
 .projects__row{
@@ -301,7 +304,8 @@ PROJECTS #1bb71b
 
 .projects__title{
     font-size: 36px;
-    margin-top: 40px ;
+    margin-top: 40px;
+    margin-bottom: 24px;
 }
 
 .projects__container{
@@ -381,4 +385,71 @@ PROJECTS #1bb71b
 .project__link{
     color: white;
     font-size: 20px;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer{
+    height: 30vh;
+    background-color: #242424;
+}
+
+.footer__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__logo--wrapper{
+    width: 120px;
+    filter: invert(1);
+    position: relative;
+}
+
+.footer__pop-up{
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__logo--wrapper:hover .footer__pop-up{
+    transform: translateX(70px);
+    opacity: 1;
+}
+
+.footer__link--list{
+    display: flex;
+}
+
+.footer__list--item{
+    margin: 0 32px;
+    position: relative;
+}
+
+.footer__link{
+    color: white;
+}
+
+.footer__link-hover-effect{
+background-color: white;
+}
+
+.footer__list--item:hover .footer__link-hover-effect{
+    width: 100%;
+    left: 0;
+}
+
+.copyright__text{
+    color: rgba(255, 255, 255, 0.537);
 }
