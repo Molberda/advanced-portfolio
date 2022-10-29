@@ -32,6 +32,18 @@ body {
   width: 100%;
 }
 
+.click{
+    transition: all 300ms ease;
+}
+
+.click:hover{
+    scale: 1.2;
+}
+
+.click:active{
+    scale: 0.8;
+}
+
 /*
 
 NAV 
@@ -95,10 +107,6 @@ nav {
   border: none;
   cursor: pointer;
   position: relative;
-}
-
-.contrast__button:hover .fa-circle-half-stroke {
-  scale: 1.2;
 }
 
 .fa-circle-half-stroke {
@@ -179,7 +187,6 @@ LANDING green = #1bb71bbb
 }
 
 .landing__link:hover{
-    scale: 1.2;
     background-color:#1bb71be8;
 }
 
@@ -193,7 +200,7 @@ LANDING green = #1bb71bbb
   right: 50%;
   border: 2px solid black;
   border-radius: 10px;
-  height: 28px;
+  height: 32px;
   width: 16px;
   opacity: .7;
   transition: all 300ms ease;
@@ -208,17 +215,16 @@ LANDING green = #1bb71bbb
 }
 
 .scroll__wrapper:hover{
-    scale: 1.2;
     opacity: 1;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateY(-5px);
+        transform: translateY(-6px);
     }
 
     100% {
-        transform: translateY(5px);
+        transform: translateY(6px);
     }
     
 }
