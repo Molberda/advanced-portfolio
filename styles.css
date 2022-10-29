@@ -377,54 +377,67 @@ h4{
   margin-bottom: 18px;
 }
 
-.modal__form{
-  display: flex;flex-direction: column;
+form{
   width: 100%;
 }
 
+.form__item{
+  margin-bottom: 16px;
+}
+
 label{
-  margin-bottom: 8px;
-}
-
-input{
-  margin-bottom: 4px;
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-.message{
-  margin-bottom: 4px;
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-.form__underline{
-  background-color: rgb(245, 245, 245);
-  height: 3px;
-  border-radius: 3px;
-  transform: translateY(3px);
-  margin-bottom: 20px;
-}
-
-.submit{
-  margin: 20px 0 0 0;
-  width: 60%;
-  height: 52px;
   font-weight: bold;
-  font-size: 20px;
-  color: rgb(245, 245, 245);
-  background-color: #4ad24ab8;
-  border: none;
-  border-radius: 20px;
-  transition: background-color 300ms ease;
 }
 
-.submit:hover{
-  background-color: transparent;
-  border: 2px solid rgb(245, 245, 245);
+input, textarea{
+  width: 100%;
+  background-color: #242424;
+  color: rgb(245, 245, 245);
+  outline: none;
+  border: 3px solid white;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  height: 40px;
+  transition: all 300ms ease;
 }
+
+input:hover, textarea:hover{
+  border-color: #b1f8b1;
+}
+
+input:focus, textarea:focus{
+  border-color: #49cc49c6;
+}
+
+textarea{
+  resize: vertical;
+  height: 54px;
+  margin-top: 12px;
+}
+
+.form__submit{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(245, 245, 245);
+  background-color: #49cc49c6;
+  border: 3px solid #49cc49c6;
+  padding: 12px 28px;
+  border-radius: 20px;
+  transition: all 300ms ease;
+
+}
+
+.form__submit:hover{
+  background-color: transparent;
+  border-color: rgb(245, 245, 245);
+}
+
+.form__submit:active{
+  border-color: #49cc49c6;
+  color: #49cc49c6;
+}
+
 
 /* 
 

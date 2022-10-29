@@ -126,38 +126,43 @@
             <div class="modal__languages">
               <figure class="language__wrapper">
                 <img src="./assets/html.png" alt="" class="language__img" />
-                <p class="language__name">html</p>
+                <p class="language__name">Html</p>
               </figure>
               <figure class="language__wrapper">
-                <img src="./assets/html.png" alt="" class="language__img" />
-                <p class="language__name">html</p>
+                <img src="./assets/css3.png" alt="" class="language__img" />
+                <p class="language__name">Css</p>
               </figure>
               <figure class="language__wrapper">
-                <img src="./assets/html.png" alt="" class="language__img" />
-                <p class="language__name">html</p>
+                <img src="./assets/javascript.png" alt="" class="language__img" />
+                <p class="language__name">JavaScript</p>
               </figure>
               <figure class="language__wrapper">
-                <img src="./assets/html.png" alt="" class="language__img" />
-                <p class="language__name">html</p>
+                <img src="./assets/react.png" alt="" class="language__img" />
+                <p class="language__name">React</p>
               </figure>
             </div>
           </div>
         </div>
         <div class="modal__half modal__contact">
           <div class="row modal__row">
+            <div class="modal__organizer">
             <h2 class="modal__about--title">Let's have a chat!</h2>
             <h4>I'm currently open to new opportunities</h4>
-            <form action="" class="modal__form">
-              <label for="text">Name</label>
-              <input type="text" />
-              <div class="form__underline"></div>
-              <label for="email">Email</label>
-              <input type="email" />
-              <div class="form__underline"></div>
-              <label for="text">Name</label>
-              <textarea name="message" id="" cols="" rows="3" class="message"></textarea>
-              <div class="form__underline"></div>
-              <button type="submit" class="submit">Send it my way!!</button>
+          </div>
+            <form action="" id="contact__form">
+              <div class="form__item">
+                <label class="form__item--label" for="name">Name</label>
+                <input placeholder="John Doe" type="text" class="input" name="user_name" required></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label" for="email">Email</label>
+                <input placeholder="JohnDoe123@gmail.com" type="email" class="input" name="user_email" required></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label" for="message">Message</label>
+                <textarea placeholder="I'd love to talk to you, mail me back as soon as posible :)" type="text" class="input" name="message" required></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">Send it my way!</button>
             </form>
           </div>
         </div>
