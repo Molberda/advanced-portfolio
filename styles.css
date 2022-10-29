@@ -308,12 +308,12 @@ MODAL
 
 .modal__half{
   width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .modal__about{
   background-color: rgb(245, 245, 245);
-  display: flex;
-  align-items: center;
 }
 
 .modal__row{
@@ -371,6 +371,59 @@ MODAL
 .modal__contact{
   background-color: #242424;
   color: white;
+}
+
+h4{
+  margin-bottom: 18px;
+}
+
+.modal__form{
+  display: flex;flex-direction: column;
+  width: 100%;
+}
+
+label{
+  margin-bottom: 8px;
+}
+
+input{
+  margin-bottom: 4px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.message{
+  margin-bottom: 4px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.form__underline{
+  background-color: rgb(245, 245, 245);
+  height: 3px;
+  border-radius: 3px;
+  transform: translateY(3px);
+  margin-bottom: 20px;
+}
+
+.submit{
+  margin: 20px 0 0 0;
+  width: 60%;
+  height: 52px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(245, 245, 245);
+  background-color: #4ad24ab8;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 300ms ease;
+}
+
+.submit:hover{
+  background-color: transparent;
+  border: 2px solid rgb(245, 245, 245);
 }
 
 /* 
