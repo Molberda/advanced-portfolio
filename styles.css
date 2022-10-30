@@ -356,9 +356,11 @@ MODAL
 
 .modal__about--title {
   margin-bottom: 8px;
+  color: #242424 !important;
 }
 
 .modal__about--description {
+  color: #242424 !important;
   margin: 20px 0;
   line-height: 2;
   text-align: justify;
@@ -391,6 +393,7 @@ MODAL
   bottom: -20px;
   transition: all 300ms ease;
   scale: 0;
+  color: #242424 !important;
 }
 
 .language__wrapper:hover .language__name {
@@ -690,4 +693,41 @@ footer {
 
 .copyright__text {
   color: rgba(255, 255, 255, 0.537);
+}
+
+/* 
+
+DARK THEME
+
+*/
+
+.dark__theme section{
+  background-color: #242424;
+}
+
+
+.dark__theme h1,
+.dark__theme h2,
+.dark__theme h3,
+.dark__theme p,
+.dark__theme .nav__link,
+.dark__theme .contrast__button
+{
+  color: white;
+}
+
+
+.dark__theme .scroll__wrapper{
+border-color: white;
+}
+.dark__theme .scroll__dot{
+  background-color: white;
+}
+
+.dark__theme .nav__logo--wrapper{
+  filter: invert(1);
+}
+
+.dark__theme .footer__pop-up{
+  filter: invert(1);
 }

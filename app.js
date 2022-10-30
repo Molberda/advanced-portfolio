@@ -1,15 +1,20 @@
 // templateid: template_yh47puc
 // serviceid: service_wuzb1m5
 // pP19DnVESUmrE9Psq
+let isModalOpen = false
+let darkToggle = false
 
-// <script type="text/javascript"
-//         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-// </script>
-// <script type="text/javascript">
-//    (function(){
-//       emailjs.init("YOUR_PUBLIC_KEY");
-//    })();
-// </script>
+
+function toggleDark(){
+    darkToggle = !darkToggle
+    if(darkToggle){
+        document.body.classList += " dark__theme"
+    }
+    else{
+        document.body.classList.remove("dark__theme")
+    }
+}
+
 
 function contact(event) {
   event.preventDefault();
@@ -34,7 +39,6 @@ function contact(event) {
     })
 }
 
-let isModalOpen = false 
 function toggleModal(event){
     event.preventDefault()
     if (isModalOpen){
