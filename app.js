@@ -38,6 +38,7 @@ let isModalOpen = false
 function toggleModal(event){
     event.preventDefault()
     if (isModalOpen){
+        isModalOpen = false
         return document.body.classList.remove('modal__open')
     }
     isModalOpen = !isModalOpen

@@ -17,323 +17,329 @@
       crossorigin="anonymous"
     ></script>
     <script src="./app.js" defer></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("pP19DnVESUmrE9Psq");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("pP19DnVESUmrE9Psq");
+      })();
+    </script>
   </head>
   <body>
-    <button class="contact__button click" onclick="toggleModal(event)">
-      <a href="" class="contact__link">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-    </button>
-    <section id="landing__page">
-      <nav>
-        <figure class="nav__logo--wrapper">
-          <img src="./assets/Logo Personal.png" alt="" />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link--item">
-            <a href="" class="nav__link"
-              >About
-              <div class="nav__link-hover-effect"></div
-            ></a>
-          </li>
-          <li class="nav__link--item">
-            <a href="#projects" class="nav__link"
-              >Projects
-              <div class="nav__link-hover-effect"></div
-            ></a>
-          </li>
-          <li class="nav__link--item">
-            <a href="" class="nav__link"
-              >Contact
-              <div class="nav__link-hover-effect"></div>
-            </a>
-          </li>
-          <li class="nav__link--item">
-            <button class="contrast__button click">
-              <i class="fa-solid fa-circle-half-stroke"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div class="row landing__row">
-        <div class="conatiner landing__container">
-          <div class="landing__organizer">
-            <h1 class="landing__title">Hey <span class="wave">👋</span></h1>
-            <h1 class="landing__title">
-              <span class="text__green">I'm David.</span>
-            </h1>
-            <p class="landing__intro">
-              I'm a <span class="text__green">Frontend Developer</span> with a
-              strong desire to grow, improve and acquire knowledge. <br />
-              Here's a bit more
-              <a href="" class="about-me">
-                <span class="text__green about__text">about me</span>
-              </a>
-            </p>
-            <div class="landing__links">
-              <a
-                href="https://github.com/Molberda"
-                class="landing__link click"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/david-moller-2a9512255/"
-                class="landing__link click"
-                target="_blank"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="./assets/David Moller Resume.pdf"
-                class="landing__link click"
-                target="_blank"
-              >
-                <i class="fa-regular fa-file-pdf"></i>
-              </a>
-            </div>
-          </div>
-          <figure class="landing__img--wrapper">
-            <img src="./assets/foto__david.jpeg" alt="" />
-          </figure>
-        </div>
-        <a href="#projects">
-          <div class="scroll__wrapper click">
-            <div class="scroll__dot"></div>
-          </div>
+    <div class="body">
+      <button class="contact__button click" onclick="toggleModal(event)">
+        <a href="" class="contact__link">
+          <i class="fa-solid fa-envelope"></i>
         </a>
-      </div>
-      <div class="modal">
-        <div class="modal__half modal__about">
-          <div class="row modal__row">
-            <div class="modal__about--organizer">
-              <h2 class="modal__about--title">Here's a bit more about me</h2>
-              <h4>Frontend Developer</h4>
-              <p class="modal__about--description">
-                I'm a 21 year old American
-                <span class="text__green">Frontend developer</span> eager to
-                <span class="text__green">learn</span> and
-                <span class="text__green"> gain experience</span>. <br /><br />
-                I'm currently working with
-                <span class="text__green">Html</span>,
-                <span class="text__green">Css</span>,
-                <span class="text__green">JavaScript</span> and
-                <span class="text__green">React</span> as a freelance developer,
-                helping young entrepreneurs build their dream website
-              </p>
-            </div>
-            <div class="modal__languages">
-              <figure class="language__wrapper">
-                <img src="./assets/html.png" alt="" class="language__img" />
-                <p class="language__name">Html</p>
-              </figure>
-              <figure class="language__wrapper">
-                <img src="./assets/css3.png" alt="" class="language__img" />
-                <p class="language__name">Css</p>
-              </figure>
-              <figure class="language__wrapper">
-                <img
-                  src="./assets/javascript.png"
-                  alt=""
-                  class="language__img"
-                />
-                <p class="language__name">JavaScript</p>
-              </figure>
-              <figure class="language__wrapper">
-                <img src="./assets/react.png" alt="" class="language__img" />
-                <p class="language__name">React</p>
-              </figure>
-            </div>
-          </div>
-        </div>
-        <div class="modal__half modal__contact">
-          <div class="row modal__row">
-            <div class="modal__organizer">
-              <h2 class="modal__about--title">Let's have a chat!</h2>
-              <h4>I'm currently open to new opportunities</h4>
-            </div>
-            <form onsubmit="contact(event)" id="contact__form">
-              <div class="form__item">
-                <label class="form__item--label" for="name">Name</label>
-                <input
-                  placeholder="John Doe"
-                  type="text"
-                  class="input"
-                  name="user_name"
-                  required
-                />
-              </div>
-              <div class="form__item">
-                <label class="form__item--label" for="email">Email</label>
-                <input
-                  placeholder="JohnDoe123@gmail.com"
-                  type="email"
-                  class="input"
-                  name="user_email"
-                  required
-                />
-              </div>
-              <div class="form__item">
-                <label class="form__item--label" for="message">Message</label>
-                <textarea
-                  placeholder="I'd love to talk to you, mail me back as soon as posible :)"
-                  type="text"
-                  class="input"
-                  name="message"
-                ></textarea>
-              </div>
-              <button id="contact__submit" class="form__submit">
-                Send it my way!
+      </button>
+      <section id="landing__page">
+        <nav>
+          <figure class="nav__logo--wrapper">
+            <img src="./assets/Logo Personal.png" alt="" />
+          </figure>
+          <ul class="nav__link--list">
+            <li class="nav__link--item">
+              <a href="" class="nav__link" onclick="toggleModal(event)"
+                >About
+                <div class="nav__link-hover-effect"></div
+              ></a>
+            </li>
+            <li class="nav__link--item">
+              <a href="#projects" class="nav__link"
+                >Projects
+                <div class="nav__link-hover-effect"></div
+              ></a>
+            </li>
+            <li class="nav__link--item">
+              <a href="" class="nav__link" onclick="toggleModal(event)"
+                >Contact
+                <div class="nav__link-hover-effect"></div>
+              </a>
+            </li>
+            <li class="nav__link--item">
+              <button class="contrast__button click">
+                <i class="fa-solid fa-circle-half-stroke"></i>
               </button>
-            </form>
-            <div class="modal__overlay modal__overlay--loading">
-              <i class="fas fa-spinner"></i>
-            </div>
-            <div class="modal__overlay modal__overlay--success">
-              <h2 class="success__message">
-                Thanks for <br />
-                reaching out! <br />
-                <br />
-                Looking foward to speaking to you soon.
-              </h2>
-            </div>
-          </div>
-        </div>
-        <i class="fas fa-times modal__exit click"></i>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="row projects__row">
-        <h2 class="projects__title">
-          Here are some of my <span class="text__green">Projects.</span>
-        </h2>
-        <div class="container projects__container">
-          <figure class="projects__wrapper">
-            <div class="projects__description--container">
-              <h3 class="project__title">Barco</h3>
-              <p class="project__subtitle">Html, Css & JavaScript</p>
-              <p class="project__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-                modi, cumque in vero nihil fugit qui eligendi deserunt assumenda
-                esse eius adipisci perspiciatis rerum voluptatibus nemo
-                obcaecati ducimus ea saepe quod unde dolorem? Adipisci
-                dignissimos veniam eveniet similique id ducimus tempora in iure
-                officia, numquam nobis nihil, est odio odit?
-              </p>
-              <a href="" class="project__link">
-                <i class="fa-solid fa-link click"></i>
-              </a>
-            </div>
-            <div class="projects__hover--background"></div>
-            <img
-              src="./assets/Eportfolio YT.png"
-              alt=""
-              class="projects__img"
-            />
-          </figure>
-          <figure class="projects__wrapper">
-            <div class="projects__description--container">
-              <h3 class="project__title">Barco</h3>
-              <p class="project__subtitle">Html, Css & JavaScript</p>
-              <p class="project__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-                modi, cumque in vero nihil fugit qui eligendi deserunt assumenda
-                esse eius adipisci perspiciatis rerum voluptatibus nemo
-                obcaecati ducimus ea saepe quod unde dolorem? Adipisci
-                dignissimos veniam eveniet similique id ducimus tempora in iure
-                officia, numquam nobis nihil, est odio odit?
-              </p>
-              <a href="" class="project__link">
-                <i class="fa-solid fa-link click"></i>
-              </a>
-            </div>
-            <div class="projects__hover--background"></div>
-            <img
-              src="./assets/Eportfolio YT.png"
-              alt=""
-              class="projects__img"
-            />
-          </figure>
-          <figure class="projects__wrapper">
-            <div class="projects__description--container">
-              <h3 class="project__title">Barco</h3>
-              <p class="project__subtitle">Html, Css & JavaScript</p>
-              <p class="project__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-                modi, cumque in vero nihil fugit qui eligendi deserunt assumenda
-                esse eius adipisci perspiciatis rerum voluptatibus nemo
-                obcaecati ducimus ea saepe quod unde dolorem? Adipisci
-                dignissimos veniam eveniet similique id ducimus tempora in iure
-                officia, numquam nobis nihil, est odio odit?
-              </p>
-              <a href="" class="project__link">
-                <i class="fa-solid fa-link click"></i>
-              </a>
-            </div>
-            <div class="projects__hover--background"></div>
-            <img
-              src="./assets/Eportfolio YT.png"
-              alt=""
-              class="projects__img"
-            />
-          </figure>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="row footer__row">
-        <div class="container footer__container">
-          <a href="#" class="footer__logo--wrapper click">
-            <img src="./assets/Logo Personal outline.png" alt="" />
-            <p class="footer__pop-up">
-              Top <i class="fa-solid fa-arrow-up"></i>
-            </p>
-          </a>
-          <ul class="footer__link--list">
-            <li class="footer__list--item">
-              <a
-                href="https://github.com/Molberda"
-                target="_blank"
-                class="footer__link"
-                >Github</a
-              >
-              <div class="footer__link-hover-effect"></div>
-            </li>
-            <li class="footer__list--item">
-              <a
-                href="https://www.linkedin.com/in/david-moller-2a9512255/"
-                target="_blank"
-                class="footer__link"
-                >LinkedIn</a
-              >
-              <div class="footer__link-hover-effect"></div>
-            </li>
-            <li class="footer__list--item">
-              <a href="" class="footer__link">Contact</a>
-              <div class="footer__link-hover-effect"></div>
-            </li>
-            <li class="footer__list--item">
-              <a
-                href="./assets/David Moller Resume.pdf"
-                class="footer__link"
-                target="_blank"
-                >Resume
-              </a>
-              <div class="footer__link-hover-effect"></div>
             </li>
           </ul>
-          <p class="copyright__text">Copyright © 2021 David Moller</p>
+        </nav>
+        <div class="row landing__row">
+          <div class="conatiner landing__container">
+            <div class="landing__organizer">
+              <h1 class="landing__title">Hey <span class="wave">👋</span></h1>
+              <h1 class="landing__title">
+                <span class="text__green">I'm David.</span>
+              </h1>
+              <p class="landing__intro">
+                I'm a <span class="text__green">Frontend Developer</span> with a
+                strong desire to grow, improve and acquire knowledge. <br />
+                Here's a bit more
+                <a href="" class="about-me" onclick="toggleModal(event)">
+                  <span class="text__green about__text">about me</span>
+                </a>
+              </p>
+              <div class="landing__links">
+                <a
+                  href="https://github.com/Molberda"
+                  class="landing__link click"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/david-moller-2a9512255/"
+                  class="landing__link click"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="./assets/David Moller Resume.pdf"
+                  class="landing__link click"
+                  target="_blank"
+                >
+                  <i class="fa-regular fa-file-pdf"></i>
+                </a>
+              </div>
+            </div>
+            <figure class="landing__img--wrapper">
+              <img src="./assets/foto__david.jpeg" alt="" />
+            </figure>
+          </div>
+          <a href="#projects">
+            <div class="scroll__wrapper click">
+              <div class="scroll__dot"></div>
+            </div>
+          </a>
+        </div>
+
+      </section>
+      <section id="projects">
+        <div class="row projects__row">
+          <h2 class="projects__title">
+            Here are some of my <span class="text__green">Projects.</span>
+          </h2>
+          <div class="container projects__container">
+            <figure class="projects__wrapper">
+              <div class="projects__description--container">
+                <h3 class="project__title">Barco</h3>
+                <p class="project__subtitle">Html, Css & JavaScript</p>
+                <p class="project__description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                  modi, cumque in vero nihil fugit qui eligendi deserunt
+                  assumenda esse eius adipisci perspiciatis rerum voluptatibus
+                  nemo obcaecati ducimus ea saepe quod unde dolorem? Adipisci
+                  dignissimos veniam eveniet similique id ducimus tempora in
+                  iure officia, numquam nobis nihil, est odio odit?
+                </p>
+                <a href="" class="project__link">
+                  <i class="fa-solid fa-link click"></i>
+                </a>
+              </div>
+              <div class="projects__hover--background"></div>
+              <img
+                src="./assets/Eportfolio YT.png"
+                alt=""
+                class="projects__img"
+              />
+            </figure>
+            <figure class="projects__wrapper">
+              <div class="projects__description--container">
+                <h3 class="project__title">Barco</h3>
+                <p class="project__subtitle">Html, Css & JavaScript</p>
+                <p class="project__description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                  modi, cumque in vero nihil fugit qui eligendi deserunt
+                  assumenda esse eius adipisci perspiciatis rerum voluptatibus
+                  nemo obcaecati ducimus ea saepe quod unde dolorem? Adipisci
+                  dignissimos veniam eveniet similique id ducimus tempora in
+                  iure officia, numquam nobis nihil, est odio odit?
+                </p>
+                <a href="" class="project__link">
+                  <i class="fa-solid fa-link click"></i>
+                </a>
+              </div>
+              <div class="projects__hover--background"></div>
+              <img
+                src="./assets/Eportfolio YT.png"
+                alt=""
+                class="projects__img"
+              />
+            </figure>
+            <figure class="projects__wrapper">
+              <div class="projects__description--container">
+                <h3 class="project__title">Barco</h3>
+                <p class="project__subtitle">Html, Css & JavaScript</p>
+                <p class="project__description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                  modi, cumque in vero nihil fugit qui eligendi deserunt
+                  assumenda esse eius adipisci perspiciatis rerum voluptatibus
+                  nemo obcaecati ducimus ea saepe quod unde dolorem? Adipisci
+                  dignissimos veniam eveniet similique id ducimus tempora in
+                  iure officia, numquam nobis nihil, est odio odit?
+                </p>
+                <a href="" class="project__link">
+                  <i class="fa-solid fa-link click"></i>
+                </a>
+              </div>
+              <div class="projects__hover--background"></div>
+              <img
+                src="./assets/Eportfolio YT.png"
+                alt=""
+                class="projects__img"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="row footer__row">
+          <div class="container footer__container">
+            <a href="#" class="footer__logo--wrapper click">
+              <img src="./assets/Logo Personal outline.png" alt="" />
+              <p class="footer__pop-up">
+                Top <i class="fa-solid fa-arrow-up"></i>
+              </p>
+            </a>
+            <ul class="footer__link--list">
+              <li class="footer__list--item">
+                <a
+                  href="https://github.com/Molberda"
+                  target="_blank"
+                  class="footer__link"
+                  >Github</a
+                >
+                <div class="footer__link-hover-effect"></div>
+              </li>
+              <li class="footer__list--item">
+                <a
+                  href="https://www.linkedin.com/in/david-moller-2a9512255/"
+                  target="_blank"
+                  class="footer__link"
+                  >LinkedIn</a
+                >
+                <div class="footer__link-hover-effect"></div>
+              </li>
+              <li class="footer__list--item">
+                <a href="#" class="footer__link" onclick="toggleModal()">Contact</a>
+                <div class="footer__link-hover-effect"></div>
+              </li>
+              <li class="footer__list--item">
+                <a
+                  href="./assets/David Moller Resume.pdf"
+                  class="footer__link"
+                  target="_blank"
+                  >Resume
+                </a>
+                <div class="footer__link-hover-effect"></div>
+              </li>
+            </ul>
+            <p class="copyright__text">Copyright © 2021 David Moller</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <div class="row modal__row">
+          <div class="modal__about--organizer">
+            <h2 class="modal__about--title">Here's a bit more about me</h2>
+            <h4>Frontend Developer</h4>
+            <p class="modal__about--description">
+              I'm a 21 year old American
+              <span class="text__green">Frontend developer</span> eager to
+              <span class="text__green">learn</span> and
+              <span class="text__green"> gain experience</span>.
+              <br /><br />
+              I'm currently working with
+              <span class="text__green">Html</span>,
+              <span class="text__green">Css</span>,
+              <span class="text__green">JavaScript</span> and
+              <span class="text__green">React</span> as a freelance
+              developer, helping young entrepreneurs build their dream
+              website
+            </p>
+          </div>
+          <div class="modal__languages">
+            <figure class="language__wrapper">
+              <img src="./assets/html.png" alt="" class="language__img" />
+              <p class="language__name">Html</p>
+            </figure>
+            <figure class="language__wrapper">
+              <img src="./assets/css3.png" alt="" class="language__img" />
+              <p class="language__name">Css</p>
+            </figure>
+            <figure class="language__wrapper">
+              <img
+                src="./assets/javascript.png"
+                alt=""
+                class="language__img"
+              />
+              <p class="language__name">JavaScript</p>
+            </figure>
+            <figure class="language__wrapper">
+              <img src="./assets/react.png" alt="" class="language__img" />
+              <p class="language__name">React</p>
+            </figure>
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal(event)"></i>
+        <div class="row modal__row">
+          <div class="modal__organizer">
+            <h2 class="modal__about--title">Let's have a chat!</h2>
+            <h4>I'm currently open to new opportunities</h4>
+          </div>
+          <form onsubmit="contact(event)" id="contact__form">
+            <div class="form__item">
+              <label class="form__item--label" for="name">Name</label>
+              <input
+                placeholder="John Doe"
+                type="text"
+                class="input"
+                name="user_name"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label" for="email">Email</label>
+              <input
+                placeholder="JohnDoe123@gmail.com"
+                type="email"
+                class="input"
+                name="user_email"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label" for="message">Message</label>
+              <textarea
+                placeholder="I'd love to talk to you, mail me back as soon as posible :)"
+                type="text"
+                class="input"
+                name="message"
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            <h2 class="success__message">
+              Thanks for <br />
+              reaching out! <br />
+              <br />
+              Looking foward to speaking to you soon.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
