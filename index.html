@@ -17,9 +17,17 @@
       crossorigin="anonymous"
     ></script>
     <script src="./app.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("pP19DnVESUmrE9Psq");
+   })();
+</script>
   </head>
   <body>
-    <button class="contact__button click">
+    <button class="contact__button click" onclick="toggleModal(event)">
       <a href="" class="contact__link">
         <i class="fa-solid fa-envelope"></i>
       </a>
@@ -153,7 +161,7 @@
               <h2 class="modal__about--title">Let's have a chat!</h2>
               <h4>I'm currently open to new opportunities</h4>
             </div>
-            <form action="" id="contact__form">
+            <form onsubmit="contact(event)" id="contact__form">
               <div class="form__item">
                 <label class="form__item--label" for="name">Name</label>
                 <input
@@ -187,9 +195,20 @@
                 Send it my way!
               </button>
             </form>
-            <div class="modal__overlay modal__overlay--loading"></div>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+              <h2 class="success__message">
+                Thanks for <br />
+                reaching out! <br />
+                <br />
+                Looking foward to speaking to you soon.
+              </h2>
+            </div>
           </div>
         </div>
+        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
