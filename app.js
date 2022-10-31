@@ -3,13 +3,13 @@
 // pP19DnVESUmrE9Psq
 let isModalOpen = false
 let darkToggle = false
-const scaleFactor = 1 / 10
+const scaleFactor = 1 / 15
 
 function moveBackground(event){
     const shapes = document.querySelectorAll('.shape')
     const x = event.clientX * scaleFactor
     const y = event.clientY * scaleFactor
-    const rot = event.clientX / 2
+    const rot = event.clientX / 1.5
     
     for (let i = 0; i < shapes.length; ++i){
         const isOdd = i % 2 !== 0
