@@ -917,6 +917,11 @@ MEDIA QUERIES
   }
 }
 @media (max-width: 720px){
+
+  .shape{
+    display: none;
+  }
+
   .projects__container{
     max-width: 580px;
   }
