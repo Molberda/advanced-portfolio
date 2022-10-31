@@ -770,6 +770,7 @@ SHAPES
   width: 26px;
   height: 26px;
   position: fixed;
+  opacity: .6;
 }
 
 .shape--1,
