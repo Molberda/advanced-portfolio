@@ -581,6 +581,7 @@ PROJECTS #1bb71b
 }
 
 .projects__img {
+  border-radius: 32px;
   transition: all 800ms ease;
 }
 
@@ -604,6 +605,7 @@ PROJECTS #1bb71b
   right: 0;
   left: 0;
   bottom: 0;
+  border-radius: 32px;
   background-color: #242424b5;
   z-index: 2;
   opacity: 0;
