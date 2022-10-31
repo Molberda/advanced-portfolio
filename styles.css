@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+.shape{
+  width: 32px;
+  height: 32px;
+}
+
 img {
   width: 100%;
 }
