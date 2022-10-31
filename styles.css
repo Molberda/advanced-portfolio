@@ -963,6 +963,16 @@ MEDIA QUERIES
 
 @media (max-width: 520px){
 
+  .landing__img--wrapper{
+    margin: 0;
+    height: 180px;
+    width: 180px;
+  }
+
+  .landing__title{
+    font-size: 60px;
+  }
+
   .projects__title{
     font-size: 32px;
   }
@@ -990,4 +1000,17 @@ MEDIA QUERIES
   .modal__about--description{
     font-size: 14px;
   }
+
+  .footer__logo--wrapper{
+    scale: .7;
+  }
+
+  .footer__logo--wrapper:hover{
+    scale: .9;
+  }
+
+  .footer__logo--wrapper:active{
+    scale: .6;
+  }
+  
 }
