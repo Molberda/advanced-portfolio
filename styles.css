@@ -7,11 +7,6 @@
   text-decoration: none;
 }
 
-.shape{
-  width: 32px;
-  height: 32px;
-}
-
 img {
   width: 100%;
 }
@@ -761,4 +756,53 @@ border-color: white;
 .dark__theme .footer__pop-up,
 .dark__theme .contact__button{
   filter: invert(1);
+}
+
+/* 
+
+SHAPES
+
+*/
+
+.shape{
+  width: 32px;
+  height: 32px;
+  position: fixed;
+}
+
+.shape--0{
+  top: 15vh;
+  left: 5vw;
+}
+.shape--1{
+  top: 15vh;
+  left: 50vw;
+}
+.shape--2{
+  top: 15vh;
+  left: 80vw;
+}
+.shape--3{
+  top: 50vh;
+  left: 5vw;
+}
+.shape--4{
+  top: 50vh;
+  left: 50vw;
+}
+.shape--5{
+  top: 50vh;
+  left: 80vw;
+}
+.shape--6{
+  top: 85vh;
+  left: 5vw;
+}
+.shape--7{
+  top: 85vh;
+  left: 50vw;
+}
+.shape--8{
+  top: 85vh;
+  left: 80vw;
 }
