@@ -258,6 +258,7 @@ LANDING green = #1bb71bbb
   border-radius: 50%;
   box-shadow: 20px 20px 100px;
   overflow: hidden;
+  margin-left: 48px;
   width: 400px;
   height: 400px;
   animation: float 1500ms ease infinite alternate-reverse;
@@ -282,7 +283,7 @@ LANDING green = #1bb71bbb
   bottom: 10px;
   transform: translateY(-10px);
   right: 50%;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   border: 2px solid black;
   border-radius: 10px;
   height: 32px;
@@ -374,7 +375,11 @@ MODAL
 
 .modal__about--title {
   margin-bottom: 8px;
-  color: #242424 !important;
+  color: #242424;
+}
+
+.white{
+  color: white;
 }
 
 .modal__about--description {
@@ -820,4 +825,169 @@ SHAPES
   left: 80vw;
 }
 
-/* MINUTE 2:36:20 */
+/* 
+
+MEDIA QUERIES
+
+*/
+
+@media (max-width: 1100px){
+  .row{
+    max-width: 850px;
+  }
+
+  .landing__organizer{
+    max-width: 440px;
+  }
+
+  .landing__title{
+    font-size: 100px;
+  }
+  
+  .landing__intro{
+    font-size: 18px;
+  }
+
+  .landing__link{
+    scale: 0.9;
+  }
+
+  .landing__img--wrapper{
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 870px){
+  .row{
+    max-width: 780px;
+  }
+  
+  .landing__row{
+    padding-top: 12px;
+  }
+  
+  .landing__container{
+    flex-direction: column-reverse;
+  }
+  
+  .landing__organizer{
+    max-width: none;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .landing__title{
+    font-size: 86px;
+  }
+  
+  .landing__intro{
+    text-align: center;
+  }
+  
+  .landing__links{
+    justify-content: center;
+  }
+  
+  .landing__img--wrapper{
+    width: 230px;
+    height: 230px;
+    margin-top: 32px;
+  }
+  
+  footer{
+    height: 20vh;
+  }
+  
+  .footer__logo--wrapper{
+    scale: .8;
+  }
+  
+  .contact__button{
+    scale: .9;
+  }
+  
+  .projects__container{
+    max-width: 680px;
+  }
+  
+  .project__description{
+    font-size: 14px;
+    max-width: 540px;
+  }
+}
+@media (max-width: 720px){
+  .projects__container{
+    max-width: 580px;
+  }
+
+  .project__description{
+    font-size: 14px;
+    max-width: 460px;
+  }
+
+  .contact__button{
+    right: 32px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 620px){
+  .projects__container{
+    max-width: 480px;
+  }
+
+  .project__title{
+    font-size: 22px;
+  }
+
+  .project__subtitle{
+    font-size: 16px;
+    margin-bottom: 0px
+  }
+
+  .project__description{
+    font-size: 12px;
+    max-width: 360px;
+  }
+
+  .project__link{
+    font-size: 16px;
+  }
+
+  .contact__button{
+    right: 32px;
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 520px){
+
+  .projects__title{
+    font-size: 32px;
+  }
+
+  .projects__container{
+    max-width: 450px;
+  }
+
+  .projects__description--container{
+    left: 45px;
+  }
+
+  .modal__half{
+    position: relative;
+  }
+
+  .modal__row{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    height: 450px;
+  }
+
+  .modal__about--description{
+    font-size: 14px;
+  }
+}
