@@ -653,6 +653,7 @@ FOOTER
 footer {
   height: 30vh;
   background-color: #242424;
+  position: relative;
 }
 
 .footer__container {
