@@ -784,24 +784,24 @@ SHAPES
 }
 
 .shape--0{
-  top: 15vh;
-  left: 5vw;
+  top: 12vh;
+  left: 10vw;
 }
 .shape--1{
-  top: 15vh;
-  left: 42.5vw;
+  top: 12vh;
+  left: 45vw;
 }
 .shape--2{
-  top: 15vh;
+  top: 12vh;
   left: 80vw;
 }
 .shape--3{
   top: 50vh;
-  left: 5vw;
+  left: 10vw;
 }
 .shape--4{
   top: 50vh;
-  left: 42.5vw;
+  left: 45vw;
 }
 .shape--5{
   top: 50vh;
@@ -809,11 +809,11 @@ SHAPES
 }
 .shape--6{
   top: 85vh;
-  left: 5vw;
+  left: 10vw;
 }
 .shape--7{
   top: 85vh;
-  left: 42.5vw;
+  left: 45vw;
 }
 .shape--8{
   top: 85vh;
