@@ -324,7 +324,7 @@ MODAL
   visibility: hidden;
   height: 100vh;
   overflow: hidden;
-  transition: all 400ms ease-in;
+  transition: all 800ms ease-in;
 }
 
 .modal__open .modal {
@@ -344,15 +344,14 @@ MODAL
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  visibility: hidden;
-  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
 }
 
 .modal__half {
   width: 50%;
   display: flex;
   align-items: center;
-  transition: all 300ms ease-in;
+  transition: all 600ms ease-in;
 }
 
 .modal__about {
