@@ -24,22 +24,11 @@ a {
   font-weight: bold;
 }
 
-body {
-  background-color: rgb(245, 245, 245);
-}
-
 .body {
+  background-color: rgb(245, 245, 245);
   opacity: 1;
   visibility: visible;
   transition: all 600ms 500ms ease;
-}
-
-.modal__open .body {
-  opacity: 0;
-  visibility: hidden;
-  height: 100vh;
-  overflow: hidden;
-  transition: all 400ms ease-in;
 }
 
 .text__green {
@@ -54,7 +43,7 @@ body {
   height: 100%;
 }
 
-.conatiner {
+.container {
   display: flex;
   width: 100%;
 }
@@ -86,6 +75,16 @@ body {
   width: 80px;
   z-index: 5;
   box-shadow: 0 0 10px white;
+  animation: slideInB 1s 500ms backwards;
+}
+
+@keyframes slideInB{
+  0%{
+    transform: translateX(300%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
 }
 
 .contact__link {
@@ -104,11 +103,6 @@ body {
 NAV 
 
 */
-
-#landing__page {
-  height: 100vh;
-  position: relative;
-}
 
 nav {
   max-width: 1200px;
@@ -170,6 +164,21 @@ nav {
 LANDING green = #1bb71bbb
 
 */
+
+#landing{
+  height: 100vh;
+  position: relative;
+  animation: slideIn 1s 500ms backwards;
+}
+
+@keyframes slideIn{
+  0%{
+    transform: translateX(-110%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
 
 .landing__row {
   max-width: 1000px;
@@ -307,6 +316,14 @@ LANDING green = #1bb71bbb
 MODAL
 
 */
+
+.modal__open .body {
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 400ms ease-in;
+}
 
 .modal__open .modal {
   z-index: 10;
@@ -534,10 +551,6 @@ PROJECTS #1bb71b
 
 */
 
-#projects {
-  margin-top: 40px;
-}
-
 .projects__row {
   flex-direction: column;
   justify-content: center;
@@ -551,6 +564,8 @@ PROJECTS #1bb71b
 }
 
 .projects__container {
+  flex-direction: column;
+  align-items: center;
   margin-top: 60px;
 }
 
@@ -701,10 +716,22 @@ DARK THEME
 
 */
 
+h1,
+h2,
+h3,
+p,
+.nav__link,
+.scroll__wrapper,
+section,
+.contrast__button,
+.scroll__dot,
+.nav__logo--wrapper{
+  transition: all 500ms ease-in-out;
+}
+
 .dark__theme section{
   background-color: #242424;
 }
-
 
 .dark__theme h1,
 .dark__theme h2,
@@ -720,14 +747,13 @@ DARK THEME
 .dark__theme .scroll__wrapper{
 border-color: white;
 }
-.dark__theme .scroll__dot{
+.dark__theme .scroll__dot,
+.dark__theme .nav__link-hover-effect{
   background-color: white;
 }
 
-.dark__theme .nav__logo--wrapper{
-  filter: invert(1);
-}
-
-.dark__theme .footer__pop-up{
+.dark__theme .nav__logo--wrapper,
+.dark__theme .footer__pop-up,
+.dark__theme .contact__button{
   filter: invert(1);
 }

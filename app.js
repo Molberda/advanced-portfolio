@@ -15,6 +15,16 @@ function toggleDark(){
     }
 }
 
+function toggleModal(event){
+    event.preventDefault()
+    if (isModalOpen){
+        isModalOpen = false
+        return document.body.classList.remove('modal__open')
+    }
+    isModalOpen = !isModalOpen
+    document.body.classList += ' modal__open'
+}
+
 
 function contact(event) {
   event.preventDefault();
@@ -39,12 +49,3 @@ function contact(event) {
     })
 }
 
-function toggleModal(event){
-    event.preventDefault()
-    if (isModalOpen){
-        isModalOpen = false
-        return document.body.classList.remove('modal__open')
-    }
-    isModalOpen = !isModalOpen
-    document.body.classList += ' modal__open'
-}
