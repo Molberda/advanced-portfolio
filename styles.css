@@ -190,6 +190,7 @@ LANDING green = #1bb71bbb
   margin: 0 12px;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 }
 
 .landing__title {
@@ -505,7 +506,7 @@ textarea {
 }
 
 .modal__overlay--visible {
-  z-index: 1;
+  z-index: 2;
   display: flex;
 }
 
@@ -765,8 +766,8 @@ SHAPES
 */
 
 .shape{
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   position: fixed;
 }
 
@@ -776,7 +777,7 @@ SHAPES
 }
 .shape--1{
   top: 15vh;
-  left: 50vw;
+  left: 42.5vw;
 }
 .shape--2{
   top: 15vh;
@@ -788,7 +789,7 @@ SHAPES
 }
 .shape--4{
   top: 50vh;
-  left: 50vw;
+  left: 42.5vw;
 }
 .shape--5{
   top: 50vh;
@@ -800,7 +801,7 @@ SHAPES
 }
 .shape--7{
   top: 85vh;
-  left: 50vw;
+  left: 42.5vw;
 }
 .shape--8{
   top: 85vh;
