@@ -984,16 +984,21 @@ MEDIA QUERIES
     font-size: 60px;
   }
 
+  .scroll__wrapper{
+    bottom: 60px;
+  }
+
   .projects__title{
     font-size: 32px;
   }
 
   .projects__container{
-    max-width: 450px;
+    max-width: 380px;
   }
 
   .projects__description--container{
-    left: 45px;
+    left: 16px;
+    max-width: 350px;
   }
 
   .modal__half{
@@ -1009,7 +1014,7 @@ MEDIA QUERIES
   }
 
   .modal__about--description{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .footer__logo--wrapper{
