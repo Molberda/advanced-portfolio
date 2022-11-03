@@ -379,7 +379,7 @@ MODAL
 
 .modal__about--title {
   margin-bottom: 8px;
-  color: #242424;
+  color: #242424 !important;
 }
 
 .white{
