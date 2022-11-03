@@ -780,8 +780,8 @@ SHAPES
 */
 
 .shape{
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   position: fixed;
   opacity: .8;
 }
