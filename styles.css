@@ -773,6 +773,10 @@ border-color: white;
   filter: invert(1);
 }
 
+.dark__theme .projects__wrapper{
+  box-shadow: 0 0px 60px 0px rgba(245, 245, 245, 0.685);
+}
+
 /* 
 
 SHAPES
