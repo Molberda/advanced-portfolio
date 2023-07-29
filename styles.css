@@ -1008,6 +1008,10 @@ MEDIA QUERIES
     max-width: 350px;
   }
 
+  .modal{
+    max-height: 550px;
+  }
+
   .modal__half{
     position: relative;
   }
@@ -1016,7 +1020,7 @@ MEDIA QUERIES
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 100px;
+    top: 50px;
     height: 450px;
   }
 
