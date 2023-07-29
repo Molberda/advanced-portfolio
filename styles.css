@@ -977,6 +977,10 @@ MEDIA QUERIES
     right: 32px;
     bottom: 90px;
   }
+  
+  .projects__wrapper{
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 520px){
@@ -1003,9 +1007,6 @@ MEDIA QUERIES
     max-width: 380px;
   }
 
-  .projects__wrapper{
-    margin-bottom: 40px;
-  }
 
   .projects__description--container{
     left: 16px;
