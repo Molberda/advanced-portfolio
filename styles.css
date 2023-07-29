@@ -171,7 +171,7 @@ LANDING green = #1bb71bbb
 */
 
 #landing{
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   animation: slideIn 1s 500ms backwards;
 }
@@ -992,7 +992,7 @@ MEDIA QUERIES
   }
 
   .scroll__wrapper{
-    bottom: 60px;
+    bottom: 30px;
   }
 
   .projects__title{
